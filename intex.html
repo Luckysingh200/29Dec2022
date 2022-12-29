@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js class mameber </title>
+    </head>
+
+    <script>
+        // i can write the js code before closing the head tag
+
+
+    </script>
+    <body>
+        
+
+
+        <script>
+            // i can write the js code before clossing the body tag 
+            //1. function defination 
+            function myfunction(){
+
+            }
+            //2. function calling 
+            myfunction();
+            //goble variable 
+            let x = 20;
+            var A = 500;
+            const C = 9;
+            let F = 55;
+
+            class MyClassA{// Pascalcase
+            
+            //1. member 1
+            //1. proprties
+            y = 80;
+            B = 400;
+            D = 9;
+            G = 5;
+
+            //2. member 2 
+
+            //3. member 3 (Method defination)
+            studentsurname(){
+              console.log('sisodiya')
+            }
+            addNumbers(){
+                console.log(x+this.y) // this belong to current class object 
+                // this is a internal class object 
+            }
+            subNumbers(){
+                window.alert(A-this.B) // this is a internal class object
+
+            }
+            multNumbers(x){
+                window.alert(C*this.D*x) // this is a inernal class object 
+            }
+            divisionNumbers(){
+                window.alert(F/this.G)// this is a internal class object
+            }
+
+            }
+            /*
+            let object = new ClassName();
+            object.method(); // . = member seletion operation 
+            */
+           let object = new MyClassA();
+           // Method calling
+           object.studentsurname();
+           object.addNumbers();
+           object.subNumbers();
+           object.multNumbers(20);// actual argument 
+           object.divisionNumbers();
+        </script>
+        <script>
+            class MyClassAA{
+                //1. Properties
+                x = 50;
+                
+                //2. member 
+
+                //3. method defination 
+              
+            }
+            class MyClassBB extends MyClassAA{
+                //1. Properties
+                y = 50;
+
+                //2. member
+
+                //3. Method difination 
+
+                addmynumber(){
+                    console.log();
+                }
+
+            }
+            let objectBB = new MyClassBB();
+            console.log(objectBB.x+objectBB.y);
+        </script>
+    </body>
+</html>
