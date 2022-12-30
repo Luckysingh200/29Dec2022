@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js class mamber</title>
+    </head>
+
+    <script>
+        // i can write the js code before the closing head tag 
+    </script>
+    <body>
+        
+
+        <script>
+            // i can write the js code before the closing body tag
+
+
+
+            class MyA{ // Pascalcase 
+                //1. Properties
+                x = 10;
+                z;
+
+                //2. Constructor 
+                constructor(b){
+                  this.z = b;
+
+                }
+                //3. Method defination 
+
+            }
+            class MyB extends MyA{
+                //1. Properties
+                y = 20;
+
+                //2. Constructor 
+                constructor(a){
+                    super(a);
+                }
+
+                //3. Method defination 
+                Showmyresult(){
+                    console.log(this.x+this.y+this.z);
+                }
+
+            }
+            let bobj = new MyB(70);
+            bobj.Showmyresult();
+
+        </script>
+
+        <script>
+            // i can write the js code before the closing body tag
+           class Lucky{
+             //1. Properties
+             A = 50;
+             C;
+
+             //2. Constructor
+             constructor(tarun){
+                this.C = tarun
+
+             }
+
+             //3. Method defination
+           } 
+           class tarun extends Lucky{
+             //1. Properties
+             B = 50;
+             
+
+             //2. Constructor 
+             constructor(Lucky){
+                super(Lucky)
+
+             }
+
+             //3. Method defination
+             myresult(){
+                console.log(this.A+this.B+this.C);
+             }
+           } 
+           let objb = new tarun(33)
+           objb.myresult();
+
+        </script>
+        <script>
+            // i can write the js code before closing the body tag
+            class A{
+                //1. Properties 
+                D = 'Lucky'
+                F;
+                
+
+                //2. Construtor
+                constructor(n){
+                    this.F = n;
+
+                }
+
+                //3. Method defination 
+
+            }
+            class B extends A{
+                //1. Properties
+                E = 'Singh'
+
+                //2. Construtor
+                constructor(l){
+                    super(l)
+
+                }
+
+                //3. Method defination
+                Myresult2(){
+                window.alert(this.D+this.E+this.F);
+                }
+            }
+            let objbb = new B(2002);
+            objbb.Myresult2();
+        </script>
+        <script>
+            // i can write the js code before closing the body tag
+            class Bca{
+                //1. Properties
+                studentName = tarun
+                A;
+
+                //2. Construtor 
+                constructor(b){
+                    this.A = b;
+
+                }
+
+                //3. Method defination
+
+            }
+            class Mca{
+                //1. Properties
+                studentsurname = parmer
+
+                //2. Construtor 
+                constructor(a){
+                    super(a)
+                }
+            
+
+                }
+
+                //3. Method defination
+                result(){
+                    window.alert(this.studentName+this.studentsurname+this.A);
+                }
+            let objc = new Mca(20)
+            objc.result();
+    
+            
+            
+
+        </script>
+    </body>
+</html>
